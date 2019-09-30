@@ -1,0 +1,152 @@
+
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  padding: unset;
+  margin-top: unset;
+  margin-bottom: unset;
+}
+li {
+
+  font-size: 0.9em;
+  color: black;
+  display: list-item;
+  border-bottom: lightgray solid 0.2em;
+  padding : 1em;
+  line-height: 100%;
+}
+html,body{
+  margin: 0;
+  height: 100%;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+
+}
+
+.name {
+  float: left;
+  width: 45%;
+  color: darkcyan;
+}
+.owner {
+  float: left;
+  width: 35%;
+  font-size: 0.8em;
+}
+
+.price {
+  float: right;
+  color: darkcyan;
+}
+
+.list {
+  padding-bottom: 2em;
+}
+
+.head {
+  height: 12%;
+  background-color: blue;
+  position: relative;
+  color: white;
+}
+
+.dropDown{
+  position: absolute;
+  bottom: 0;
+  padding: 2%;
+}
+
+
+html{
+  min-height:100%;/* make sure it is at least as tall as the viewport */
+  position:relative;
+}
+body{
+  height:100%; /* force the BODY element to match the height of the HTML element */
+}
+.app {
+  height: 100%;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+.mainDiv {
+  width: 100%;
+  height: 78%;
+  overflow: auto;
+}
+.titleDiv {
+  padding: 2%;
+  text-align: center;
+}
+
+.sumZone {
+  padding-bottom: 11%;
+  position: relative;
+  width: -moz-available;
+  background-color: #282c34;
+  margin: unset;
+  bottom: 0px;
+  max-width: 700px;
+}
+
+.footer{
+  position: relative;
+}
+
+.form {
+  background: lightgray;
+  margin: auto;
+  text-align: center;
+  height: 1.5em;
+}
+
+
+
+.innerFooter {
+  position: relative;
+  float: right;
+  right: 1em;
+  color: white;
+  font-size: 0.8em;
+}
+
+
+.sum {
+  position: fixed;
+  bottom: 0.2em;
+}
+.sumText {
+  margin-bottom: 0.8em;
+}
+
+
+
+
+#root {
+  height: 100%;
+}
+.title{
+  font-size: 1.2em;
+  margin: unset;
+}
+.dropDownClass {
+  width: 20%;
+}
+.formProduct{
+  width: 20%;
+  border: 2px;
+}
+.formPrice{
+  width: 10%;
+}
+.addUser {
+  float: right;
+  width: 40%;
+}
+.addUserInput {
+
+  width: 30%;
+
+}
