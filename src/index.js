@@ -20,6 +20,8 @@ const rows = [
     {"owner" : users[1], "name": "Shooters", "price" : 50.0}
     ];
 
+
+
 const element = <App rows={rows} users = {users} title={title}/>;
 
 ReactDOM.render(element, document.getElementById('root'));

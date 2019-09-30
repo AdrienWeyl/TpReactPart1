@@ -13,11 +13,10 @@ class App extends React.Component {
         this.state = {filter: "All", rows: props.rows, users: props.users};
         const rows = localStorage.getItem('rows');
         const users = localStorage.getItem('users');
-        if (rows !== undefined) {
+        if (rows !== null) {
           this.state.rows = JSON.parse(rows);
-
         }
-        if (users !== undefined) {
+        if (users !== null) {
           this.state.users = JSON.parse(users);
         }
 

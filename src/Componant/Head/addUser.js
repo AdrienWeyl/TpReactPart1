@@ -14,7 +14,10 @@ class AddUser extends React.Component{
 
 
     onClick = (event)=>{
-        this.props.handleClick(this.state.input);
+        if(this.state.input !== '' && !this.props.users.includes(this.state.input)) {
+            this.props.handleClick(this.state.input);
+            alert("User " + this.state.input + " added");
+        }
     }
 
     render() {
