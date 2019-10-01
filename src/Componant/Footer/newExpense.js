@@ -37,7 +37,7 @@ class NewExpense extends React.Component{
             <Input name={"formProduct"} type={"text"} placeholder={"product"} handleChange={this.changeProduct}/>
             <DropDown users={this.props.users} class={"formSelect"} handleChange={this.changeOwner} dropDownClass={"dropDownForm"}/>
             <Input name={"formPrice"} type={"integer"} placeholder={"€€€"} handleChange={this.changePrice} />
-            <button className={"formButton"} onClick={this.onClick}>+</button>
+            <button disabled={!(this.state.product !== "" && this.state.price)} className={"formButton"} onClick={this.onClick}>+</button>
         </div>
     }
 }
