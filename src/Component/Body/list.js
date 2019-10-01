@@ -10,7 +10,7 @@ class List extends React.Component{
 export default List
 
 function Rows(props){
-    return props.rows.map(row=>(<li className="list"><Product product={row}/></li>))
+    return props.rows.map(row=>(<li key={row.name+row.owner+row.price} className="list"><Product product={row}/></li>))
 }
 
 function Product(props){

@@ -11,7 +11,7 @@ class DropDown extends React.Component {
         if(this.props.addAll){
            all = (<option value="All">All</option>)
         }
-        const users = this.props.users.map(user => (<Option user={user}/>))
+        const users = this.props.users.map(user => (<Option key={user} user={user}/>))
         return (<select className={this.props.class} value={this.props.filter} onChange={this.handleChange}>
             {all}
             {users}
@@ -23,7 +23,7 @@ class DropDown extends React.Component {
 
 
 function Option(props) {
-    return (<option value={props.user}>{props.user}</option>)
+    return (<option key={props.user} value={props.user}>{props.user}</option>)
 }
 
 

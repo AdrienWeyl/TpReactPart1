@@ -8,7 +8,7 @@ class NewExpense extends React.Component{
     constructor(props){
         super(props);
         this.state = {product : "", owner : this.props.users[0], price : null};
-        this.priceValue = undefined;
+        this.priceValue = "";
         this.productValue = "";
     }
 
