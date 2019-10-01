@@ -6,23 +6,26 @@ class AddUser extends React.Component{
     constructor(props) {
         super(props);
         this.state = {input : ""};
+        this.nameValue ="";
     }
 
     onChangeInput = (value) => {
         this.setState({input : value})
+        this.nameValue= value;
     }
 
 
     onClick = (event)=>{
         if(this.state.input !== '' && !this.props.users.includes(this.state.input)) {
-            this.props.handleClick(this.state.input);
+            this.props.handleClick(this.nameValue);
+            this.nameValue = "";
             alert("User " + this.state.input + " added");
         }
     }
 
     render() {
         const {name} = this.props;
-        const input = (<Input name={"addUserInput"} type={"text"} placeholder={"user"} handleChange={this.onChangeInput}/>);
+        const input = (<Input name={"addUserInput"} value={this.nameValue} type={"text"} placeholder={"user"} handleChange={this.onChangeInput}/>);
         const button = (<button className={"addButton"} disabled={!(this.state.input !== '' && !this.props.users.includes(this.state.input))} onClick={this.onClick}>+</button>);
 
         return (<div className={name}>
