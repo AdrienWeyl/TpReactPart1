@@ -34,6 +34,7 @@ class NewExpense extends React.Component{
             this.setState({product :"", price : undefined})
             this.productValue = "";
             this.priceValue="";
+            alert(this.state.owner +" just adds :"+this.state.product+ " witch cost: " + this.state.price  +"€ ");
         }
     };
 
