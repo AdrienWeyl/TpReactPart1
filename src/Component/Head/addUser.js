@@ -19,7 +19,7 @@ class AddUser extends React.Component{
         if(this.state.input !== '' && !this.props.users.includes(this.state.input)) {
             this.props.handleClick(this.nameValue);
             this.nameValue = "";
-            alert("You just add a new user named :" + this.state.input);
+            alert("You just add a new user named: " + this.state.input);
         }
     }
 
